@@ -1,0 +1,387 @@
+<script id="PreviewHbsId" type="text/x-handlebars-template">
+    <div class="divClass" id="divIdBillPreview">
+        <div class="kbackgroundClass" id="background">
+            <p class="bg-text" id="kp2">DUPLICATE</p>
+        </div>
+        <table style="width:100%; border:1px solid #000; border-collapse: collapse; ">
+            <tbody>
+                <tr>
+                    <th width="0%"></th>
+                    <th width="5.2410901467505235%"></th>
+                    <th width="31.446540880503143%"></th>
+                    <th width="15.723270440251572%"></th>
+                    <th width="10.90146750524109%"></th>
+                    <th width="20.964360587002094%"></th>
+                    <th width="15.723270440251572%"></th>
+                </tr>
+                <tr>
+                    <td colspan="3"
+                        style="text-align:Left; font-size: 15px; font-family: Arial Black; border-left: 1px solid #000">
+                        No. : {{CNo}}</td>
+                    <td colspan="2" style="text-align:Center; font-size: 16px; font-family: Arial Black">CASH
+                    </td>
+                    <td colspan="2"
+                        style="text-align:Right; font-size: 15px; font-family: Arial Black; border-right: 1px solid #000">
+                        Date : {{Date}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width:100%; border:0px solid #000; border-collapse: collapse; ">
+            <tbody>
+                <tr>
+                    <th width="0%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                    <th width="14.285714285714286%"></th>
+                </tr>
+                <tr>
+                    <td colspan="8"
+                        style="text-align:Left; font-size: 15px; font-family: Arial Black; border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000">
+                        Customer Name :{{Customer}} </td>
+                </tr>
+                <tr>
+                    <td colspan="8"
+                        style="text-align:left; font-size: 15px; font-family: Bhaskarvallie Old Face; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8"
+                        style="text-align:Left; font-size: 15px; font-family: Bhaskarvallie Old Face; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8"
+                        style="font-size: 15px; font-family: Bhaskarvallie Old Face; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="InvTable" style="width:100%; border:px solid #000; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th class="KCol-0"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="5.00%" data-editable="True" data-dataattribute="SNO">#</th>
+                    <th class="KCol-1"
+                        style="font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="5.00%" data-editable="True" data-dataattribute="HSN">HSN</th>
+                    <th class="KCol-2"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="30.00%" data-editable="True" data-dataattribute="ProductName">ProductName</th>
+                    <th class="KCol-3"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="15.00%" data-editable="True" data-dataattribute="Batch">Bar code</th>
+                    <th class="KCol-4"
+                        style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="10.00%" data-showtotal="Yes" data-editable="True" data-dataattribute="QTY">PCS
+                    </th>
+                    <th class="KCol-5"
+                        style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="10.00%" data-editable="True" data-dataattribute="RATE">RATE</th>
+                    <th class="KCol-6"
+                        style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="15.00%" data-editable="True" data-dataattribute="DiscountAmount"></th>
+                    <th class="KCol-7"
+                        style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000"
+                        width="10.00%" data-showtotal="Yes" data-editable="True" data-dataattribute="Amount">
+                        Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each InvGrid}}
+                <tr>
+                    <td style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{@index}}</td>
+                    <td style="font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        5208
+                    </td>
+                    <td style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{ProductName}}</td>
+                    <td style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{Barcode}}</td>
+                    <td style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{Qty}}</td>
+                    <td style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{Rate}}</td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    {{DisCount}}</td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                        {{Amount}}
+                    </td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000">.
+                    </td>
+                    <td style="border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Left; border-left: 1px solid #000; border-right: 1px solid #000"></td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                    <td style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000">
+                    </td>
+                </tr>
+                <tr class="table-primary  KClassTFootRowTotal" style="border-color:#007bff" id="TFootRowTotal">
+                    <td class="KCol-0"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-1"
+                        style="font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-2"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-3"
+                        style="text-align:Left; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-4"
+                        style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                        1</td>
+                    <td class="KCol-5"
+                        style="text-align:Right; font-size: 15px; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-6"
+                        style="text-align:right; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                    </td>
+                    <td class="KCol-7"
+                        style="text-align:Right; border-left: 1px solid #000; border-right: 1px solid #000; border-top: 1px solid #000; border-bottom: 1px solid #000">
+                        6,350.00</td>
+                </tr>
+            </tbody>
+            <tfoot style="display:none">
+                <tr>
+                    <td><button class="btn btn default TabClass btnClassTFootSave" onclick="jFInvTableSave(this)"
+                            tabindex="1001" id="btnTFootSave">Save</button></td>
+                </tr>
+            </tfoot>
+        </table>
+{{log TaxData}}
+<div class="row ">
+    <div class="col border" >
+        Tax Percentage
+        </div>
+        <div class="col border text-end" >
+        Taxable Value
+       </div>
+       <div class="col border text-end" >
+        Cgst
+    </div>
+    <div class="col border text-end" >
+        Sgst
+    </div>
+    <div class="col border text-end" >
+      Inclusive Amount
+    </div>
+</div>
+
+{{#each TaxData}}
+<div class="row">
+    <div class="col border">
+        {{TaxPer}}
+    </div>
+    <div class="col border text-end" >
+        {{TaxableAmount}}
+    </div>
+    <div class="col border text-end" >
+        {{Cgst}}
+    </div>
+    <div class="col border text-end" >
+        {{Sgst}}
+    </div>
+    <div class="col border text-end" >
+        {{Amount}}
+    </div>
+</div>
+{{/each}}
+
+
+    </div>
+    </script>

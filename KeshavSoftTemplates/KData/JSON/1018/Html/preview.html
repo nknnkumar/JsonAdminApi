@@ -1,0 +1,56 @@
+<style type="text/css" media="print,screen">
+    .kbackgroundClass {
+        position: absolute;
+        text-align: center;
+        z-index: -1;
+        background: white;
+        display: block;
+        min-height: 20%;
+        min-width: 50%;
+        color: yellow;
+    }
+
+    .divClass {
+        z-index: -1;
+    }
+
+    .bg-text {
+        margin-left: 100px;
+        margin-top: 200px;
+        color: WHITESMOKE;
+        font-size: 50px;
+        transform: rotate(800deg);
+        -webkit-transform: rotate(325deg);
+        opacity: 0.5;
+    }
+
+    .bg-text_15 {
+        margin-left: 100px;
+        margin-top: 100px;
+        color: WHITESMOKE;
+        font-size: 150px;
+        transform: rotate(800deg);
+        -webkit-transform: rotate(325deg);
+        opacity: 0.5;
+    }
+
+    .divborder {
+        border-style: solid;
+    }
+
+    .kinline {
+        display: inline-grid;
+    }
+</style>
+
+<div class="card">
+    <div class="card-head">
+        <input type="button" value="Print" class="btn btn-default"
+            onclick="JVarGlobalAPICalls.Print.ToPrinter({ PrintDivName:'divIdDoubleBillPreviews' })">
+    </div>
+    <div class="card-body">
+        <div id="divIdDoubleBillPreviews">
+         
+        </div>
+    </div>
+</div>

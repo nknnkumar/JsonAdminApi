@@ -1,0 +1,36 @@
+{
+    "Masters-Products": {
+        "JsonConfig": {
+            "UserFolderName": "",
+            "inFolderName": "Masters",
+            "inJsonFileName": "Products.json"
+        },
+        "ItemConfig": {
+            "ItemName": "ProductNames"
+        },
+        "Columns": [
+            "ProductName",
+            "pk"
+        ],
+        "DataListInfo": {
+            "DatalistID": "Masters-Products"
+        }
+    },
+    "Masters-Customers": {
+        "JsonConfig": {
+            "UserFolderName": "",
+            "inFolderName": "Masters",
+            "inJsonFileName": "Customers.json"
+        },
+        "ItemConfig": {
+            "ItemName": "CustomerNames"
+        },
+        "Columns": [
+            "CustomerName",
+            "pk"
+        ],
+        "DataListInfo": {
+            "DatalistID": "Masters-Customers"
+        }
+    }
+}
