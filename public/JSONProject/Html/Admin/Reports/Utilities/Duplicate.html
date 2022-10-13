@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- Custom styles for this template -->
+    <link href="../../../../css/headers.css" rel="stylesheet">
+</head>
+
+<body class="mb-5">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+    </svg>
+
+    <header class="mb-3">
+    <div id="NavBarId" class="px-2 py-2 bg-danger text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <h5 class="me-lg-auto">Reports Delete</h5>
+
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="../../Dashboard.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                            </svg>
+                            Admin Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../TableColumns.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.364 3.5a.5.5 0 0 1 .5-.5H14.5A1.5 1.5 0 0 1 16 4.5v10a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 3 14.5V7.864a.5.5 0 1 1 1 0V14.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H7.864a.5.5 0 0 1-.5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 0 1H1.707l8.147 8.146a.5.5 0 0 1-.708.708L1 1.707V5.5a.5.5 0 0 1-1 0v-5z" />
+                            </svg>
+                            Parent
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Delete.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                <path fill-rule="evenodd"
+                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                            </svg>
+                            Delete
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./DuplicateVoucherColumn/DuplicateItem.html" class="nav-link text-info">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.493.493 0 0 1-.35.145V.989z" />
+                            </svg>
+                            Duplicate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./DuplicateTableColumn.html" class="nav-link text-info">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.493.493 0 0 1-.35.145V.989z" />
+                            </svg>
+                            Duplicate Table Column
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Fix.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20"viewBox="0 0 16 16">
+                              <path
+                              d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
+                      </svg>
+                            Fix
+                        </a>
+                    </li>
+        
+
+                    <li id="HeaderLoginButtonId">
+                        <a href="#" id="dropdown09" class="nav-link text-white"
+                            onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                            Login
+                        </a>
+                    </li>
+                    <li id="HeaderUserIdLi" class="visually-hidden">
+                        <a href="#" id="HeaderUserIdDropDown" data-bs-toggle="dropdown" aria-expanded="false"
+                            class="nav-link text-white dropdown-toggle">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            UserName
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="HeaderUserIdDropDown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                                    Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container">
+            <div id="KCont1" class="row">
+
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card border-primary mb-3">
+                    <div class="card-header">
+                        <h4>Select</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Item</label>
+                                <div class="col-sm-6">
+                                    <input onkeyup="jVarGlobalClientObject.AdminApi.Reports.ForPk.ForDataList()"
+                                        class="form-control" list="ItemsList" id="ItemSelected" value="Ledger2" />
+                                    <datalist id="ItemsList"> </datalist>
+                                    <div class="invalid-feedback">
+                                        Please choose an Item name.
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary col-sm-1 me-3"
+                                    onclick="jVarGlobalClientObject.AdminApi.Reports.ForPk.ForDataList()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-success col-sm-1" data-bs-toggle="modal"
+                                    data-bs-target="#ItemsModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-diamond-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.493.493 0 0 1-.35.145V.989z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">pk</label>
+                                <div class="col-sm-6 ">
+                                    <input onkeyup="jVarGlobalClientObject.AdminApi.Reports.ForColumn.ForDataList()"
+                                        class="form-control" list="PkList" id="PkSelected" value="2" />
+                                    <datalist id="PkList"> </datalist>
+                                    <div class="invalid-feedback">
+                                        Please choose a Screen name.
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary col-sm-1 me-3"
+                                    onclick="jVarGlobalClientObject.AdminApi.Reports.ForColumn.ForDataList()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z">
+                                        </path>
+                                    </svg>
+
+                                </button>
+                                <button type="button" class="btn btn-outline-success col-sm-1" data-bs-toggle="modal"
+                                    data-bs-target="#PkModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-diamond-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.493.493 0 0 1-.35.145V.989z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Column</label>
+                                <div class="col-sm-6">
+                                    <input type="text" autocomplete="off" onkeyup="" class="form-control"
+                                        list="ColumnList" id="ColumnSelected">
+                                    <datalist id="ColumnList"> </datalist>
+                                    <div class="invalid-feedback">
+                                        Please choose a Column name.
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-success col-sm-1" data-bs-toggle="modal"
+                                    data-bs-target="#ColumnsModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-diamond-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.493.493 0 0 1-.35.145V.989z" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="KCont1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div class="bg-light d-flex justify-content-between">
+                <div>KeshavSoft</div>
+                <div data-BaseString="Last refresh : " id="KLastRefreshDT">Last refresh : </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" tabindex="-1" id="ItemsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Items Duplicate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">ItemName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="ItemDuplicate" id="ItemDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuccessModel"
+                        onclick="jVarGlobalClientObject.AdminApi.Reports.Duplicate.Items()">Duplicate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="PkModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pk Duplicate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">PkDuplicateName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="PkDuplicate" id="PkDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="jFArrayItem(event)">Duplicate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        let jFArrayItem = (inEvent) => {
+            let jVarLocalCurrentTarget = inEvent.currentTarget;
+            console.log("jVarLocalCurrentTarget : ", jVarLocalCurrentTarget);
+            let jVarLocalItemName = document.getElementById("ItemSelected").value;
+            let LocalFromName = document.getElementById("PkSelected").value;
+            let LocalToName = document.getElementById("PkDuplicate").value;
+            let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+            let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+            console.log("LocalFromName", LocalFromName);
+            fetch(`/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Reports/Duplicate/VouchersConsider/ArrayItem?inFolderName=Reports&inJsonFileName=LedgerAuto.json&inItemName=${jVarLocalItemName}&inFromName=${LocalFromName}&inToName=${LocalToName}`)
+
+                .then(response => {
+                    if (!response.ok) { throw new Error(response.statusText) };
+
+                    return response.json();
+                }).then((FetchData) => {
+                    if (FetchData.KTF) {
+                        let jVarLocalModalRef = jVarLocalCurrentTarget.closest(".modal");
+                        var modal = bootstrap.Modal.getInstance(jVarLocalModalRef)
+                        modal.hide();
+                        Swal.fire('success');
+                    }
+                }).catch(error => { });
+        }
+
+
+    </script>
+
+
+
+    <div class="modal" tabindex="-1" id="ColumnsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Columns Duplicate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">ColumnName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="ColumnpkDuplicate" id="ColumnpkDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="jFColumn(event)">Duplicate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="SuccessModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Duplicate Successfully</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LoginModalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enter client user credentials</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="LoginFormPopUpId" class="" onsubmit="return false" novalidate>
+                    <div class="mb-3 form-floating is-valid">
+                        <input type="text" class="form-control" id="KUserNameInput" required>
+                        <label for="KUserNameInput">User Name</label>
+                        <div class="invalid-feedback">
+                            User Name cannot be empty.
+                        </div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="password" class="form-control" id="KPasswordInput" required>
+                        <label for="KPasswordInput">Password</label>
+                        <div class="invalid-feedback">
+                            Password cannot be empty.
+                        </div>
+                    </div>
+                    <input type="submit" class=" btn btn-primary" onclick="jVarGlobalClientObject.Login.LoginCheck()">
+                    <!-- <button type="button" class="btn btn-primary"
+                        onclick="jVarGlobalAdmin.Login.LoginCheck()">Check</button>
+                         -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/ClassesStatic/CommonClass.js"></script>
+<script src="/js/Admin/HeadFocus.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let jVarGlobalPresentViewData;
+        let jVarGlobalHBSData = {};
+
+        jVarGlobalClientObject.UI.ModalFuncs.LoadToDOM();
+        jVarGlobalClientObject.Login.ClientSideCookieFuncs.CheckToken();
+        jVarGlobalClientObject.Login.ShowLoginDetailsOnDOM.InHeader();
+        // jVarGlobalClientObject.AdminApi.Items.PullData();
+        //  jVarGlobalClientObject.DataApi.Folders.PullData();
+        jVarGlobalClientObject.AdminApi.Reports.Items.ForDataList();
+    </script>
+
+    <script>
+        let jFColumn = (inEvent) => {
+            let jVarLocalCurrentTarget = inEvent.currentTarget;
+            let jVarLocalItemName = document.getElementById("ItemSelected").value;
+            let jVarLocalPkName = document.getElementById("PkSelected").value;
+            let LocalFromName = document.getElementById("ColumnSelected").value;
+            let LocalToName = document.getElementById("ColumnpkDuplicate").value;
+            let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+            let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+
+            fetch(`/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Reports/Duplicate/VouchersConsider/Columns/WithParams/${jVarLocalItemName}/${jVarLocalPkName}/${LocalFromName}/${LocalToName}`)
+                .then(response => {
+                    if (!response.ok) { throw new Error(response.statusText) };
+
+                    return response.json();
+                }).then((FetchData) => {
+                    if (FetchData.KTF) {
+                        let jVarLocalModalRef = jVarLocalCurrentTarget.closest(".modal");
+                        var modal = bootstrap.Modal.getInstance(jVarLocalModalRef)
+                        modal.hide();
+                        Swal.fire('success');
+                    }
+                }).catch(error => { });
+        };
+    </script>
+</body>
+
+</html>

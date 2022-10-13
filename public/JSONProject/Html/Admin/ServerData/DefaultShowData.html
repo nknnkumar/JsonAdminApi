@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Headers · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="../../../css/headers.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+    </svg>
+
+    <header>
+  <div id="NavBarId" class="px-2 py-2 bg-danger text-white">
+      <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0  text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                      <use xlink:href="#bootstrap" />
+                  </svg>
+              </a>
+              <h6 class="me-lg-auto">ServerData</h6>
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-right my-md-0 text-small">
+                  <li>
+                      <a href="./Tabular/DefaultValueCreate.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-bag-plus d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                          </svg>
+                           Tabular
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./DefaultValueCreate.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-bag-plus d-block mx-auto" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                  d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                              <path
+                                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                          </svg> DefaultValueCreate
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./DefaultShowData.html" class="nav-link text-info">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-back d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z" />
+                          </svg> DefaultShowData
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./DefaultValueShow.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-award d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                          </svg> DefaultValueShow
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./SaveCheck.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-shield-check d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                              <path
+                                  d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                          </svg> SaveCheck
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./EnterToServer.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-hdd-rack d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                              <path
+                                  d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1v2H2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-1V7h1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm0 7v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-3-4v2H4V7h8z" />
+                          </svg> EnterToServer
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./TransformBeforeSave.html" class="nav-link text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-hourglass-bottom d-block mx-auto" viewBox="0 0 16 16">
+                              <path
+                                  d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z" />
+                          </svg> TransformBeforeSave
+                      </a>
+                  </li>
+                  <li id="HeaderLoginButtonId">
+                      <a href="#" id="dropdown09" class="nav-link text-white"
+                          onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-hourglass-bottom d-block mx-auto" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                          </svg> Login
+                      </a>
+                  </li>
+                  <li id="HeaderUserIdLi" class="visually-hidden">
+                      <a href="#" id="HeaderUserIdDropDown" data-bs-toggle="dropdown" aria-expanded="false"
+                          class="nav-link text-white dropdown-toggle">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              class="bi bi-hourglass-bottom d-block mx-auto" viewBox="0 0 16 16">
+                              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                              <path fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                          </svg> UserName
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="HeaderUserIdDropDown">
+                          <li><a class="dropdown-item" href="#"
+                                  onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                                  <i class="bi bi-power" style="font-size: 1.3rem; color:orangered"></i>
+                                  logout </a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+
+</header>
+
+
+
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="mt-2" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../UserData/Dashboard.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../Dashboard.html">Admin</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">ServerData</li>
+                    <li class="breadcrumb-item active" aria-current="page">DefaultShowData</li>
+                </ol>
+            </nav>
+            <!-- Breadcrumb end -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded  mb-2"
+aria-label="Twelfth navbar example">
+<div class="container-fluid">
+    <button class="navbar-toggler mb-2 mt-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>Filters
+    </button>
+    <div id="navbarsExample10" class="collapse navbar-collapse justify-content-md-center">
+        <div id="KDataListNavBar">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item me-2 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" list="FolderList" name="FolderName"
+                            id="FolderSelected" placeholder="Select Folder" autocomplete="off">
+                        <datalist id="FolderList"> </datalist>
+
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="jVarGlobalClientObject.DataApi.Files.PullData()"
+                            id="button-addon2">Go</button>
+                    </div>
+                </li>
+                <li class="nav-item me-2 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" list="FileList" name="FileName"
+                            id="FileSelected" placeholder="Select File" autocomplete="off">
+                        <datalist id="FileList"> </datalist>
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="jVarGlobalClientObject.DataApi.Items.ForDataList(event)"
+                            id="button-addon2">Go</button>
+
+                    </div>
+                </li>
+
+                <li class="nav-item me-2 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" list="ItemList" name="ItemName"
+                            id="ItemSelected" placeholder="Select Item" autocomplete="off">
+                        <datalist id="ItemList"> </datalist>
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="jVarGlobalClientObject.DataApi.Screens.ForDataList()"
+                            id="button-addon2">Go</button>
+                    </div>
+                </li>
+
+                <li class="nav-item me-2 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" list="ScreenList" name="ScreenName"
+                            id="ScreenSelected" placeholder="Select Screen" autocomplete="off">
+                        <datalist id="ScreenList">
+
+                        </datalist>
+                        <button class="btn btn-outline-secondary" type="button"
+                            onclick="jVarGlobalClientObject.DataApi.Columns.ForDataList()"
+                            id="button-addon2">Go</button>
+                    </div>
+                </li>
+
+                <li class="nav-item me-2 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" list="ColumnsList" name="ColumnName"
+                            id="ColumnSelected" placeholder="Select Column">
+                        <datalist id="ColumnsList">
+                        </datalist>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</nav>
+
+            <!--dropdowns-->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-sm-7">
+                        <div class="card border-success mb-3" data-EndPoint="DefaultShowData"
+                            data-KQueryObject="{{inItemName.{{inScreenName.TableColumns[DataAttribute:inColumnName.ServerSide.DefaultShowData">
+                            <div id="DefaultShowDataBodyId" class="card-body">
+                                <div class="mb-3 row">
+                                    <label class="col col-form-label">FolderName</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="FolderName" id="FolderName">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col col-form-label">FileName</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="FileName" id="FileName">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col col-form-label">ItemName</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="ItemName" id="ItemName">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col col-form-label">CheckColumnName</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="CheckColumnName"
+                                            id="CheckColumnName">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col col-form-label">RetColumnName</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="RetColumnName" id="RetColumnName">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="form-check  form-switch">
+                                            <input class="form-check-input" type="checkbox" name="ShowTotal"
+                                                id="ShowTotal" checked>
+                                            <label class="form-check-label"
+                                                for="flexSwitchCheckChecked">ShowTotal</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="form-check  form-switch">
+                                            <input class="form-check-input" type="checkbox" name="SaveOnEnter"
+                                                id="SaveOnEnter" checked>
+                                            <label class="form-check-label"
+                                                for="flexSwitchCheckChecked">SaveOnEnter</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="card-footer  ">
+                                <button class="btn btn-outline-primary" style="float:left;"
+                                    onclick="jVarGlobalClientObject.AdminApi.Config.TableColumns.ShowData.FetchFunc(event)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                        <path
+                                            d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082z" />
+                                    </svg>
+                                </button>
+
+                                <button class="btn btn-outline-success" style="float:right;"
+                                    onclick="jVarGlobalClientObject.AdminApi.Config.TableColumns.Update.FetchPost(event)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div class="bg-light d-flex justify-content-between">
+                <div>KeshavSoft</div>
+                <div data-BaseString="Last refresh : " id="KLastRefreshDT">Last refresh : </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- login started -->
+    <div class="modal fade" id="LoginModalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter client user credentials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="LoginFormPopUpId" class="" onsubmit="return false" novalidate>
+                        <div class="mb-3 form-floating is-valid">
+                            <input type="text" class="form-control" id="KUserNameInput" required>
+                            <label for="KUserNameInput">User Name</label>
+                            <div class="invalid-feedback">
+                                User Name cannot be empty.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="password" class="form-control" id="KPasswordInput" required>
+                            <label for="KPasswordInput">Password</label>
+                            <div class="invalid-feedback">
+                                Password cannot be empty.
+                            </div>
+                        </div>
+                        <input type="submit" class=" btn btn-primary"
+                            onclick="jVarGlobalClientObject.Login.LoginCheck()">
+                        <!-- <button type="button" class="btn btn-primary"
+                        onclick="jVarGlobalAdmin.Login.LoginCheck()">Check</button>
+                         -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login ended -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+
+    <!-- <script src="/../../ClassesStatic/CommonClass.js"></script> -->
+    <script src="/ClassesStatic/CommonClass.js"></script>
+<script src="/js/Admin/HeadFocus.js"></script>
+    <script>
+        jVarGlobalClientObject.Login.ClientSideCookieFuncs.CheckToken();
+        jVarGlobalClientObject.DataApi.Folders.PullData();
+
+        let jVarHtmlLoginModalId = document.getElementById("LoginModalId");
+
+        jVarHtmlLoginModalId.addEventListener('shown.bs.modal', function (event) {
+            let jVarLocalSubmitButton = event.currentTarget.querySelector(".modal-body input[type='submit']");
+            jVarLocalSubmitButton.focus();
+        });
+    </script>
+
+</body>
+
+</html>

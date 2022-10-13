@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- Custom styles for this template -->
+
+    <link href="../../../css/headers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+
+    </svg>
+    <header>
+    <div id="NavBarId" class="px-2 py-1 bg-danger text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <h5 class="me-lg-auto ">Preload</h5>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="../Dashboard.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                            </svg>
+                            Admin Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Preload.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            Preload
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="./Tabular.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            Tabular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./JsonConfig.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            JsonConfig
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./ItemConfig.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            ItemConfig
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./DataListInfo.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            DataListInfo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Columns.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            Columns
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="./Duplicate.html" class="nav-link text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-file-ppt d-block mx-auto mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                <path
+                                    d="M6 5a1 1 0 0 1 1-1h1.188a2.75 2.75 0 0 1 0 5.5H7v2a.5.5 0 0 1-1 0V5zm1 3.5h1.188a1.75 1.75 0 1 0 0-3.5H7v3.5z" />
+                            </svg>
+                            Duplicate
+                        </a>
+                    </li>
+                    <li id="HeaderLoginButtonId">
+                        <a href="#" id="dropdown09" class="nav-link text-white"
+                            onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+
+                            </svg> Login
+                        </a>
+                    </li>
+                    <li id="HeaderUserIdLi" class="visually-hidden">
+                        <a href="#" id="HeaderUserIdDropDown" data-bs-toggle="dropdown" aria-expanded="false"
+                            class="nav-link text-white dropdown-toggle">
+                            <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            UserName
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="HeaderUserIdDropDown">
+                            <li><a class="dropdown-item" href="#" onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                                    <i class="bi bi-power" style="font-size: 1.3rem; color:orangered"></i>
+                                    logout</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Report Name</th>
+                        <th>Columns</th>
+                    </tr>
+                </thead>
+                <tbody id="KTBody">
+                </tbody>
+            </table>
+        </div>
+
+
+        <div id="KCont1">
+        </div>
+
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div class="bg-light d-flex justify-content-between">
+                <div>KeshavSoft</div>
+                <div data-BaseString="Last refresh : " id="KLastRefreshDT">Last refresh : </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- login model starts -->
+    <div class="modal fade" id="LoginModalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter client user credentials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="LoginFormPopUpId" class="" onsubmit="return false" novalidate>
+                        <div class="mb-3 form-floating is-valid">
+                            <input type="text" class="form-control" id="KUserNameInput" required>
+                            <label for="KUserNameInput">User Name</label>
+                            <div class="invalid-feedback">
+                                User Name cannot be empty.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="password" class="form-control" id="KPasswordInput" required>
+                            <label for="KPasswordInput">Password</label>
+                            <div class="invalid-feedback">
+                                Password cannot be empty.
+                            </div>
+                        </div>
+                        <input type="submit" class=" btn btn-primary"
+                            onclick="jVarGlobalClientObject.Login.LoginCheck()">
+                        <!-- <button type="button" class="btn btn-primary"
+                    onclick="jVarGlobalAdmin.Login.LoginCheck()">Check</button>
+                     -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login model ends -->
+    <!-- <script src="/ClassesStatic/CommonClass.js"></script> -->
+    <script src="/ClassesStatic/CommonClass.js"></script>
+<script src="/js/Admin/HeadFocus.js"></script>
+
+    <!-- <script src="../../../js/FetchFuncs.js"></script> -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+     -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script>
+        let jVarGlobalPresentViewData;
+        let jVarGlobalHBSData = {};
+
+        // jVarGlobalClientObject.UI.ModalFuncs.LoadToDOM();
+        jVarGlobalClientObject.Login.ClientSideCookieFuncs.CheckToken();
+        jVarGlobalClientObject.Login.ShowLoginDetailsOnDOM.InHeader();
+        jVarGlobalClientObject.DataApi.PreLoad.PullData();
+        let jVarHtmlLoginModalId = document.getElementById("LoginModalId");
+        jVarHtmlLoginModalId.addEventListener('shown.bs.modal', function (event) {
+            let jVarLocalSubmitButton = event.currentTarget.querySelector(".modal-body input[type='submit']");
+            jVarLocalSubmitButton.focus();
+
+        });
+        // jVarGlobalClientObject.AdminApi.Reports.Items.ForDataList();
+        // jVarGlobalClientObject.AdminApi.Items.PullData();
+        // jVarGlobalClientObject.DataApi.Folders.PullData();
+
+        Handlebars.registerHelper('ForSNo', (item) => {
+            return item + 1;
+        });
+
+    </script>
+    <script>
+        let jVarCommonSubRoute = "API";
+
+        class CommonFuncsForTree {
+            static FuncsForFetchUpdate = {
+                PrepareObjectFromRow: ({ inJVarLocalRowElements }) => {
+                    let jVarLocalFetchBodydata = {};
+                    inJVarLocalRowElements.forEach((LoopElement) => {
+                        if (LoopElement.type === "checkbox") {
+                            jVarLocalFetchBodydata[LoopElement.name] = false;
+
+                            if (LoopElement.checked) {
+                                jVarLocalFetchBodydata[LoopElement.name] = true;
+                            };
+                        } else {
+                            jVarLocalFetchBodydata[LoopElement.name] = LoopElement.value;
+                        };
+                    });
+
+                    return jVarLocalFetchBodydata;
+                }
+            }
+
+            static getUrlQueryParams = () => {
+                var queryParams = {}, param;
+                var params = window.location.search.substring(1).split("&");
+                for (var i = 0; i < params.length; i++) {
+                    param = params[i].split('=');
+                    if (param.length === 2) {
+                        queryParams[param[0]] = param[1];
+                    };
+                }
+                return queryParams;
+            }
+
+            static ApplyClasses = ({ indataFromApi }) => {
+                let jVarLocalFirstFolder;
+                let jVarLocalFirstFile;
+                let jVarLocalFirstItem;
+                let jVarLocalFirstScreen;
+                let jVarLocalFirstColumn;
+
+                // console.log("indataFromApi:", indataFromApi);
+
+                if ("Folders" in indataFromApi) {
+                    if (Object.values(indataFromApi.Folders).length > 0) {
+                        jVarLocalFirstFolder = Object.values(indataFromApi.Folders)[0];
+                        jVarLocalFirstFolder.TabPageClass = " show active";
+                        jVarLocalFirstFolder.MenuClass = " active";
+
+                        if ("Files" in jVarLocalFirstFolder) {
+                            if (Object.values(jVarLocalFirstFolder.Files).length > 0) {
+                                jVarLocalFirstFile = Object.values(jVarLocalFirstFolder.Files)[0];
+                                jVarLocalFirstFile.TabPaneClass = " show active";
+                                jVarLocalFirstFile.ButtonClass = " active";
+
+                                if ("Items" in jVarLocalFirstFile) {
+                                    if (Object.values(jVarLocalFirstFile.Items).length > 0) {
+                                        jVarLocalFirstItem = Object.values(jVarLocalFirstFile.Items)[0];
+                                        jVarLocalFirstItem.ShowOnLoad = true;
+
+                                        if ("Screens" in jVarLocalFirstItem) {
+                                            if (Object.values(jVarLocalFirstItem.Screens).length > 0) {
+                                                jVarLocalFirstScreen = Object.values(jVarLocalFirstItem.Screens)[0];
+                                                jVarLocalFirstScreen.CollapseClass = " show";
+
+                                                jVarLocalFirstColumn = Object.values(jVarLocalFirstScreen.TableColumnsObject)[0];
+                                                jVarLocalFirstColumn.KSautofocus = "autofocus";
+                                            };
+                                        };
+                                    };
+                                };
+                            };
+
+                        };
+
+                    };
+                };
+            }
+
+            static ApplyClassesFromUrl = ({ indataFromApi, inQueryParamsAsObject }) => {
+                // console.log("kkkkkkkkkkk", indataFromApi, inQueryParamsAsObject);
+
+                if (inQueryParamsAsObject.inReportName in indataFromApi.Reports) {
+                    indataFromApi.Reports[inQueryParamsAsObject.inReportName].RowClass = "table-success";
+                    indataFromApi.Reports[inQueryParamsAsObject.inReportName].KSautofocusinFolderName = "autofocus";
+                };
+            }
+        };
+
+
+
+        let jFBeforeFetch = () => {
+            let jVarLocalReturObject = {
+                KTF: false,
+                ItemName: ""
+            };
+
+            let jVarLocalItemSelectedId = document.getElementById("ItemSelected");
+            let jVarLocalItemSelectedValue = jVarLocalItemSelectedId.value;
+            jVarLocalReturObject.ItemName = jVarLocalItemSelectedValue
+            return jVarLocalReturObject;
+        };
+
+        let jFShowDataOnHtml = ({ inObjectWithValues }) => {
+            let jVarLocalFindInputs = document.getElementById("DefaultBodyId").querySelectorAll("input");
+            let jVarLocalLoopName;
+
+            for (i = 0; i < jVarLocalFindInputs.length; ++i) {
+                jVarLocalLoopName = jVarLocalFindInputs[i].name;
+
+                if (jVarLocalLoopName in inObjectWithValues) {
+                    jVarLocalFindInputs[i].value = inObjectWithValues[jVarLocalLoopName];
+                    //console.log("jVarLocalFindInputs : ", jVarLocalLoopName, inObjectWithValues[jVarLocalLoopName]);
+
+                }
+            }
+
+        };
+
+
+        let jFShowData1 = (injVarThis) => {
+            let jVarLocalHtmlCard = injVarThis.currentTarget.closest(".card");
+            let jVarLocalHtmlFormControl = jVarLocalHtmlCard.querySelector(".card-body");
+            let jVarLocalEndPoint = jVarLocalHtmlCard.dataset.kqueryobject;
+
+            let jVarLocalUrlObject = jVarGlobalClientObject.AdminApi.CommonFuncs.CheckBeforeFetch({ inHtmlParentControl: document.getElementById("KDataListNavBar") });
+            let jVarLocalUrlObject1 = jFBeforeFetch({ inHtmlParentControl: document.getElementById("KDataListNavBar") });
+            // console.log("jVarLocalUrlObject", jVarLocalUrlObject, jVarLocalUrlObject1);
+
+            if (jVarLocalUrlObject.KTF) {
+                //     let jVarLocalFetchUrl = jVarGlobalClientObject.AdminApi.Config.Preload.Tabular.JsonConfig.CommonFuncs.PrepareUrl.ForShowData({ inUrlObject: jVarLocalUrlObject });
+                let jVarLocalFetchUrl = `/JSONProject/AdminApi/Config/Preload/Tabular/JsonConfig?inItemName=${jVarLocalUrlObject.ItemName}`;
+                // console.log("jVarLocalFetchUrl", jVarLocalFetchUrl);
+
+                fetch(`${jVarLocalFetchUrl}&inKQueryObject=${jVarLocalEndPoint}`)
+                    .then(response => response.json())
+                    .then(dataFromApi => {
+                        jFShowDataOnHtml({ inObjectWithValues: dataFromApi });
+                        //  console.log("dataFromApi : ", dataFromApi);
+                        // this.AdminApi.CommonFuncs.ShowOnScreenFuncs.ShowOnScreen({ injVarData: dataFromApi, inJVarHtmlControl: jVarLocalHtmlFormControl });
+                        // this.AdminApi.CommonFuncs.ChangeClassesFuncs.ShowData({ inJVarHtmlCard: jVarLocalHtmlCard });
+                        //this.AdminApi.CommonFuncs.DefaultFocus({ inJVarHtmlControl: jVarLocalHtmlFormControl });
+                    });
+
+            };
+        };
+
+        let jFShowData = (injVarThis) => {
+            let jvarLocalColumn = document.getElementById("Columns");
+       //     let jvarLocalColumnValue= jvarLocalColumn.value;
+          //  let JvarLocalColumToString = jvarLocalColumnValue.toString();
+            //console.log("JvarLocalColumToString:",JvarLocalColumToString);
+            let jVarLocalFetchUrl = `/JSONProject/AdminApi/Config/Preload/Tabular/Columns`;
+            var jVarLocalQueryParams = CommonFuncsForTree.getUrlQueryParams();
+
+
+            fetch(jVarLocalFetchUrl)
+                .then(response => response.json())
+                .then(dataFromApi => {
+                    if (Object.keys(jVarLocalQueryParams).length > 0) {
+                        CommonFuncsForTree.ApplyClassesFromUrl({
+                            indataFromApi: dataFromApi.KResult,
+                            inQueryParamsAsObject: jVarLocalQueryParams
+                        });
+                    };
+
+                    jFObjectToTemplate({ inDataFromApi: dataFromApi.KResult });
+                });
+        };
+
+        let jFObjectToTemplate = ({ inDataFromApi }) => {
+            let jVarLocalRawTemplate = document.getElementById("HbsTemplateForReportsTable").innerHTML;
+            let jVarLocalKTBody = document.getElementById("KTBody");
+
+            var template = Handlebars.compile(jVarLocalRawTemplate);
+            jVarLocalKTBody.innerHTML = template(inDataFromApi);
+        };
+        let jFUpdateDataLocal = (inEvent, inReportName) => {
+            let jVarLocalCurrentTarget = inEvent.currentTarget;
+            let jVarLocalHtmlTr = jVarLocalCurrentTarget.closest("tr");
+            let jVarLocalRowElements = jVarLocalHtmlTr.querySelectorAll("input");
+            let jVarLocalFetchBodydata = CommonFuncsForTree.FuncsForFetchUpdate.PrepareObjectFromRow({ inJVarLocalRowElements: jVarLocalRowElements });
+
+            let jVarLocalFetchUrl = `/JSONProject/AdminApi/Config/Preload/UpdateKeys/Columns`;
+            jVarLocalFetchBodydata.inReportName = inReportName;
+
+            fetch(jVarLocalFetchUrl, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(jVarLocalFetchBodydata)
+            }).then(response => response.json())
+                .then(dataFromApi => {
+
+                    if (dataFromApi.KTF) {
+                        window.location = `${window.location.origin}${window.location.pathname}?inReportName=${inReportName}`;
+                    };
+                });
+
+        };
+
+
+
+        jFShowData();
+    </script>
+
+    <script id="HbsTemplateForReportsTable" type="text/x-handlebars">
+            {{#each this.Reports}}
+            {{log "this" this}}
+            <tr class="{{RowClass}}">
+                <td class="text-center">
+                    {{ForSNo @index}}
+                </td>
+                <td>
+                    {{this.ReportName}}
+                </td>
+                <td>
+                    <input type="text" class="form-control" name="Columns" id="Columns" value={{Columns}} {{KSautofocusinFolderName}}>
+                </td>
+                
+                <td>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{../FolderName}}-{{../FileNameWithOutExtension}}-{{../ItemName}}-{{ScreenName}}"
+                    aria-expanded="false" 
+                    onclick="jFUpdateDataLocal(event,'{{ReportName}}')">
+                    Update
+                </button>
+                </td>
+            </tr>
+            {{/each}}
+  </script>
+
+
+
+</body>
+
+</html>

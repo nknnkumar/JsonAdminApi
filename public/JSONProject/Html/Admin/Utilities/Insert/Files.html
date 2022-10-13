@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Insert</title>
+    <!-- Custom styles for this template -->
+    <link href="../../../../css/headers.css" rel="stylesheet">
+</head>
+
+<body class="mb-5">
+    <header class="mb-3">
+  <div id="NavBarId" class="px-2 py-2 bg-danger text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center my-2 my-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <h5 class="me-lg-auto ">Alter</h5>
+        <ul class="nav col-12 col-lg-auto  justify-content-center  text-small">
+          <li>
+            <a href="../Dashboard.html" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                <path fill-rule="evenodd"
+                  d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+              </svg>
+              Admin Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="../Insert.html" class="nav-link text-white" onclick="">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M7.364 3.5a.5.5 0 0 1 .5-.5H14.5A1.5 1.5 0 0 1 16 4.5v10a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 3 14.5V7.864a.5.5 0 1 1 1 0V14.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5H7.864a.5.5 0 0 1-.5-.5z" />
+                <path fill-rule="evenodd"
+                  d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 0 1H1.707l8.147 8.146a.5.5 0 0 1-.708.708L1 1.707V5.5a.5.5 0 0 1-1 0v-5z" />
+              </svg>
+              Parent
+            </a>
+          </li>
+          <li>
+            <a href="Folders.html" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                <path
+                  d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
+              </svg>
+              Folders
+            </a>
+          </li>
+          <li>
+            <a href="Files.html" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                <path
+                  d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
+              </svg>
+              Files
+            </a>
+          </li>
+          <li>
+            <a href="Folder.html" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                <path
+                  d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
+              </svg>
+              Folder
+            </a>
+          </li>
+          <li>
+            <a href="File.html" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path
+                  d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z" />
+                <path
+                  d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z" />
+              </svg>
+              File
+            </a>
+          </li>
+          <li id="HeaderLoginButtonId">
+            <a href="#" class="nav-link text-white" onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+              </svg>
+              Login
+            </a>
+          </li>
+          <li id="HeaderUserIdLi" class="visually-hidden">
+            <a href="#" id="HeaderUserIdDropDown" data-bs-toggle="dropdown" aria-expanded="false"
+              class="nav-link text-white dropdown-toggle">
+              <svg class="bi d-block mx-auto mb-1" width="20" height="20" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+              UserName
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="HeaderUserIdDropDown">
+              <li><a class="dropdown-item" href="#" onclick="jVarGlobalClientObject.UI.ModalFuncs.Show()">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="font-size: 1.6rem; color:orangered" width="16"
+                    height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                    <path d="M7.5 1v7h1V1h-1z" />
+                    <path
+                      d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                  </svg>
+                  logout</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+        <div class="container">
+            <div id="KCont1">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div class="bg-light d-flex justify-content-between">
+                <div>KeshavSoft</div>
+                <div data-BaseString="Last refresh : " id="KLastRefreshDT">Last refresh : </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--modal popup for the ItemName duplicate-->
+    <div class="modal" tabindex="-1" id="FoldersModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Insert Folder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">FolderName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="FolderDuplicate" id="FolderDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                        onclick="jVarGlobalClientObject.AdminApi.Utilities.Insert.Folders.PullData()">Insert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="FilesModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Insert Files</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">FileName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="FileDuplicate" id="FileDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                        onclick="jVarGlobalClientObject.AdminApi.Utilities.Insert.Files.PullData()">Insert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" id="ItemsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Insert Items</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label class="col col-form-label">ItemName</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="ItemDuplicate" id="ItemDuplicate">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                        onclick="jVarGlobalClientObject.AdminApi.Utilities.Insert.Items.PullData()">Insert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login start -->
+    <div class="modal fade" id="LoginModalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter client user credentials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="LoginFormPopUpId" class="" onsubmit="return false" novalidate>
+                        <div class="mb-3 form-floating is-valid">
+                            <input type="text" class="form-control" id="KUserNameInput" required>
+                            <label for="KUserNameInput">User Name</label>
+                            <div class="invalid-feedback">
+                                User Name cannot be empty.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="password" class="form-control" id="KPasswordInput" required>
+                            <label for="KPasswordInput">Password</label>
+                            <div class="invalid-feedback">
+                                Password cannot be empty.
+                            </div>
+                        </div>
+                        <input type="submit" class=" btn btn-primary"
+                            onclick="jVarGlobalClientObject.Login.LoginCheck()">
+                        <!-- <button type="button" class="btn btn-primary"
+                      onclick="jVarGlobalAdmin.Login.LoginCheck()">Check</button>
+                       -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/ClassesStatic/CommonClass.js"></script>
+<script src="/js/Admin/HeadFocus.js"></script>
+
+    <script id="HbsTemplateStart1" type="text/x-handlebars">
+        <ul class="nav nav-tabs" role="tablist">
+            {{#each this}}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {{this.MenuClass}}" id="{{this.FolderName}}-tab" data-bs-toggle="tab"
+                    data-bs-target="#{{this.FolderName}}" type="button" role="tab" aria-controls="{{this.FolderName}}"
+                    aria-selected="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                        <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                      </svg>
+                    {{this.FolderName}}</button>
+            </li>
+            {{/each}}
+            
+            <li class="nav-item" role="presentation">
+                <a href="#" onclick="jVarLocalInsertFolderUsingSwal()" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+                        <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                        <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                       Insert New Folder
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            {{#each this}}
+            <div class="tab-pane fade {{this.TabPageClass}}" id="{{this.FolderName}}" role="tabpanel"
+                aria-labelledby="{{this.FolderName}}-tab">
+        
+                <div class="d-flex align-items-start row">
+                    <div class="nav flex-column nav-pills col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        {{#each this.Files}}
+                        <button class="nav-link" id="v-pills-{{this.FileNameId}}-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-{{this.FileNameId}}" type="button" role="tab"
+                            aria-controls="v-pills-{{this.FileNameId}}" aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM4.151 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033a1.32 1.32 0 0 1-.082-.466h.764a.576.576 0 0 0 .074.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.091-.11.137-.265.137-.466v-2.745h.791v2.725c0 .44-.119.774-.357 1.005-.237.23-.565.345-.985.345a1.59 1.59 0 0 1-.568-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Zm9.091-1.585v.522c0 .256-.039.47-.117.641a.862.862 0 0 1-.322.387.877.877 0 0 1-.47.126.883.883 0 0 1-.47-.126.87.87 0 0 1-.32-.387 1.55 1.55 0 0 1-.117-.641v-.522c0-.258.039-.471.117-.641a.87.87 0 0 1 .32-.387.868.868 0 0 1 .47-.129c.177 0 .333.043.47.129a.862.862 0 0 1 .322.387c.078.17.117.383.117.641Zm.803.519v-.513c0-.377-.069-.701-.205-.973a1.46 1.46 0 0 0-.59-.63c-.253-.146-.559-.22-.916-.22-.356 0-.662.074-.92.22a1.441 1.441 0 0 0-.589.628c-.137.271-.205.596-.205.975v.513c0 .375.068.699.205.973.137.271.333.48.589.626.258.145.564.217.92.217.357 0 .663-.072.917-.217.256-.146.452-.355.589-.626.136-.274.205-.598.205-.973Zm1.29-.935v2.675h-.746v-3.999h.662l1.752 2.66h.032v-2.66h.75v4h-.656l-1.761-2.676h-.032Z"/>
+                              </svg>
+                            {{this.FileName}}</button>
+                        {{/each}}
+                    </div>
+                    <div class="tab-content col-10">
+                        {{#each this.Files}}
+                        <div class="tab-pane fade" id="v-pills-{{this.FileNameId}}" role="tabpanel" aria-labelledby="v-pills-{{this.FileNameId}}-tab">
+                            <div class="accordion">
+                                {{#each this.Items}}
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="heading-{{this.ItemNameForHtmlId}}">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{this.ItemNameForHtmlId}}" aria-expanded="true" aria-controls="collapse-{{this.ItemNameForHtmlId}}">
+                                        {{this.ItemName}}
+                                    </button>
+                                  </h2>
+                                  <div id="collapse-{{this.ItemNameForHtmlId}}" class="accordion-collapse collapse" aria-labelledby="heading-{{this.ItemNameForHtmlId}}">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ScreenName</th>
+                                                    <th>ScreenNameForHtmlId</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {{#each this.Screens}}
+                                                <tr>
+                                                    <td class="text-center">
+                                                        {{ForSNo @index}}
+                                                    </td>
+                                                    <td>
+                                                        {{this.ScreenName}}
+                                                    </td>
+                                                    <td>
+                                                        {{this.ScreenNameForHtmlId}}
+                                                    </td>
+                                                </tr>
+                                                {{/each}}
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <input name="FileName" type="text" class="form-control" placeholder="Enter File Name"
+                                                            autocomplete="off" autofocus>
+                                                    </td>
+                                                    <td>
+                                                        <button data-foldername="{{this.FolderName}}" class="btn btn-success" onclick="jVarLocalInsertFileToFolder(event)">Insert Screen Name</button>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                {{/each}}
+                              </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+        
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script id="HbsTemplateStart" type="text/x-handlebars">
+        <ul class="nav nav-tabs" role="tablist">
+            {{#each this}}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {{this.MenuClass}}" id="{{this.FolderName}}-tab" data-bs-toggle="tab"
+                    data-bs-target="#{{this.FolderName}}" type="button" role="tab" aria-controls="{{this.FolderName}}"
+                    aria-selected="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                        <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                      </svg>
+                    {{this.FolderName}}</button>
+            </li>
+            {{/each}}
+            
+            <li class="nav-item" role="presentation">
+                <a href="#" onclick="jVarLocalInsertFolderUsingSwal()" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+                        <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                        <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                       Insert New Folder
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            {{#each this}}
+            <div class="tab-pane fade {{this.TabPageClass}}" id="{{this.FolderName}}" role="tabpanel"
+                aria-labelledby="{{this.FolderName}}-tab">
+        
+                <div class="d-flex align-items-start row">
+                    <div class="nav flex-column nav-pills col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        {{#each this.Files}}
+                        <button class="nav-link" id="v-pills-{{this.FileNameId}}-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-{{this.FileNameId}}" type="button" role="tab"
+                            aria-controls="v-pills-{{this.FileNameId}}" aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM4.151 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033a1.32 1.32 0 0 1-.082-.466h.764a.576.576 0 0 0 .074.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.091-.11.137-.265.137-.466v-2.745h.791v2.725c0 .44-.119.774-.357 1.005-.237.23-.565.345-.985.345a1.59 1.59 0 0 1-.568-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Zm9.091-1.585v.522c0 .256-.039.47-.117.641a.862.862 0 0 1-.322.387.877.877 0 0 1-.47.126.883.883 0 0 1-.47-.126.87.87 0 0 1-.32-.387 1.55 1.55 0 0 1-.117-.641v-.522c0-.258.039-.471.117-.641a.87.87 0 0 1 .32-.387.868.868 0 0 1 .47-.129c.177 0 .333.043.47.129a.862.862 0 0 1 .322.387c.078.17.117.383.117.641Zm.803.519v-.513c0-.377-.069-.701-.205-.973a1.46 1.46 0 0 0-.59-.63c-.253-.146-.559-.22-.916-.22-.356 0-.662.074-.92.22a1.441 1.441 0 0 0-.589.628c-.137.271-.205.596-.205.975v.513c0 .375.068.699.205.973.137.271.333.48.589.626.258.145.564.217.92.217.357 0 .663-.072.917-.217.256-.146.452-.355.589-.626.136-.274.205-.598.205-.973Zm1.29-.935v2.675h-.746v-3.999h.662l1.752 2.66h.032v-2.66h.75v4h-.656l-1.761-2.676h-.032Z"/>
+                              </svg>
+                            {{this.FileName}}</button>
+                        {{/each}}
+                    </div>
+                    <div class="tab-content col-10">
+                        {{#each this.Files}}
+                        <div class="tab-pane fade" id="v-pills-{{this.FileNameId}}" role="tabpanel" aria-labelledby="v-pills-{{this.FileNameId}}-tab">
+                            <div class="accordion">
+                                {{#each this.Items}}
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="heading-{{this.ItemNameForHtmlId}}">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{this.ItemNameForHtmlId}}" aria-expanded="true" aria-controls="collapse-{{this.ItemNameForHtmlId}}">
+                                        {{this.ItemName}}
+                                    </button>
+                                  </h2>
+                                  <div id="collapse-{{this.ItemNameForHtmlId}}" class="accordion-collapse collapse" aria-labelledby="heading-{{this.ItemNameForHtmlId}}">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ScreenName</th>
+                                                    <th>ScreenNameForHtmlId</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {{#each this.Screens}}
+                                                <tr>
+                                                    <td class="text-center">
+                                                        {{ForSNo @index}}
+                                                    </td>
+                                                    <td>
+                                                        {{this.ScreenName}}
+                                                    </td>
+                                                    <td>
+                                                        {{this.ScreenNameForHtmlId}}
+                                                    </td>
+                        
+                                                    
+                                                </tr>
+                                                {{/each}}
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <input name="FileName" type="text" class="form-control" placeholder="Enter File Name"
+                                                            autocomplete="off" autofocus>
+                                                    </td>
+                                                    <td>
+                                                        <button data-foldername="{{this.FolderName}}" class="btn btn-success" onclick="jVarLocalInsertFileToFolder(event)">CreateNew</button>
+                                                    </td>
+                                                </tr>
+                                
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                {{/each}}
+                              </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+        
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script id="HbsTemplateForFolders" type="text/x-handlebars">
+        <ul class="nav nav-tabs" role="tablist">
+            {{#each this}}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {{this.MenuClass}}" id="{{this.FolderName}}-tab" data-bs-toggle="tab"
+                    data-bs-target="#{{this.FolderName}}" type="button" role="tab" aria-controls="{{this.FolderName}}"
+                    aria-selected="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                        <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                      </svg>
+                    {{this.FolderName}}</button>
+            </li>
+            {{/each}}
+            
+            <li class="nav-item" role="presentation">
+                <a href="#" onclick="jVarLocalInsertFolderUsingSwal()" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+                        <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                        <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                       Insert New Folder
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            {{#each this}}
+            <div class="tab-pane fade {{this.TabPageClass}}" id="{{this.FolderName}}" role="tabpanel"
+                aria-labelledby="{{this.FolderName}}-tab">
+                
+                {{> HbsTemplateForFiles}}
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script id="HbsTemplateForFiles" type="text/x-handlebars">
+      <div class="d-flex align-items-start row">
+        <div class="nav flex-column nav-pills col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            {{#each this.Files}}
+            <button class="nav-link" id="v-pills-{{FileNameId}}-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-{{this.FileNameId}}" type="button" role="tab"
+                aria-controls="v-pills-{{this.FileNameId}}" aria-selected="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM4.151 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033a1.32 1.32 0 0 1-.082-.466h.764a.576.576 0 0 0 .074.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.091-.11.137-.265.137-.466v-2.745h.791v2.725c0 .44-.119.774-.357 1.005-.237.23-.565.345-.985.345a1.59 1.59 0 0 1-.568-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Zm9.091-1.585v.522c0 .256-.039.47-.117.641a.862.862 0 0 1-.322.387.877.877 0 0 1-.47.126.883.883 0 0 1-.47-.126.87.87 0 0 1-.32-.387 1.55 1.55 0 0 1-.117-.641v-.522c0-.258.039-.471.117-.641a.87.87 0 0 1 .32-.387.868.868 0 0 1 .47-.129c.177 0 .333.043.47.129a.862.862 0 0 1 .322.387c.078.17.117.383.117.641Zm.803.519v-.513c0-.377-.069-.701-.205-.973a1.46 1.46 0 0 0-.59-.63c-.253-.146-.559-.22-.916-.22-.356 0-.662.074-.92.22a1.441 1.441 0 0 0-.589.628c-.137.271-.205.596-.205.975v.513c0 .375.068.699.205.973.137.271.333.48.589.626.258.145.564.217.92.217.357 0 .663-.072.917-.217.256-.146.452-.355.589-.626.136-.274.205-.598.205-.973Zm1.29-.935v2.675h-.746v-3.999h.662l1.752 2.66h.032v-2.66h.75v4h-.656l-1.761-2.676h-.032Z"/>
+                  </svg>
+                {{this.FileName}}</button>
+            {{/each}}
+            <a href="#" data-foldername="{{this.FolderName}}" onclick="jVarLocalInsertFileToFolderUsingSwal(event)" class="btn btn-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM4.151 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033a1.32 1.32 0 0 1-.082-.466h.764a.576.576 0 0 0 .074.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.091-.11.137-.265.137-.466v-2.745h.791v2.725c0 .44-.119.774-.357 1.005-.237.23-.565.345-.985.345a1.59 1.59 0 0 1-.568-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Zm9.091-1.585v.522c0 .256-.039.47-.117.641a.862.862 0 0 1-.322.387.877.877 0 0 1-.47.126.883.883 0 0 1-.47-.126.87.87 0 0 1-.32-.387 1.55 1.55 0 0 1-.117-.641v-.522c0-.258.039-.471.117-.641a.87.87 0 0 1 .32-.387.868.868 0 0 1 .47-.129c.177 0 .333.043.47.129a.862.862 0 0 1 .322.387c.078.17.117.383.117.641Zm.803.519v-.513c0-.377-.069-.701-.205-.973a1.46 1.46 0 0 0-.59-.63c-.253-.146-.559-.22-.916-.22-.356 0-.662.074-.92.22a1.441 1.441 0 0 0-.589.628c-.137.271-.205.596-.205.975v.513c0 .375.068.699.205.973.137.271.333.48.589.626.258.145.564.217.92.217.357 0 .663-.072.917-.217.256-.146.452-.355.589-.626.136-.274.205-.598.205-.973Zm1.29-.935v2.675h-.746v-3.999h.662l1.752 2.66h.032v-2.66h.75v4h-.656l-1.761-2.676h-.032Z"/>
+                  </svg>
+                   Insert New File
+            </a>
+        </div>
+        <div class="tab-content col-10">
+            {{#each this.Files}}
+            <div class="tab-pane fade" id="v-pills-{{this.FileNameId}}" role="tabpanel" aria-labelledby="v-pills-{{this.FileNameId}}-tab">
+                <div class="accordion">
+                    {{> HbsTemplateForItems FolderName=../FolderName}}
+                  </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    </script>
+
+    <script id="HbsTemplateForItems" type="text/x-handlebars">
+                {{#each this.Items}}
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-{{this.ItemNameForHtmlId}}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{this.ItemNameForHtmlId}}" aria-expanded="true" aria-controls="collapse-{{this.ItemNameForHtmlId}}">
+                        {{this.ItemName}}
+                    </button>
+                  </h2>
+                  <div id="collapse-{{this.ItemNameForHtmlId}}" class="accordion-collapse collapse" aria-labelledby="heading-{{this.ItemNameForHtmlId}}">
+                    <div class="accordion-body">
+                        {{> HbsTemplateForScreens FolderName=../FolderName FileName=../FileName}}
+                    </div>
+                  </div>
+                </div>
+                {{/each}}
+                <a href="#" data-foldername="{{this.FolderName}}" data-filename="{{this.FileName}}" onclick="jVarLocalInsertFuncs.InsertItemUsingSwal(event)" class="btn btn-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM4.151 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .084-.29.387.387 0 0 0-.152-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.352-.367 1.068 1.068 0 0 1-.123-.524c0-.244.064-.457.19-.639.128-.181.304-.322.528-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.185.384c0 .121.048.22.144.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211a1 1 0 0 1 .375.358c.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033a1.32 1.32 0 0 1-.082-.466h.764a.576.576 0 0 0 .074.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.091-.11.137-.265.137-.466v-2.745h.791v2.725c0 .44-.119.774-.357 1.005-.237.23-.565.345-.985.345a1.59 1.59 0 0 1-.568-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Zm9.091-1.585v.522c0 .256-.039.47-.117.641a.862.862 0 0 1-.322.387.877.877 0 0 1-.47.126.883.883 0 0 1-.47-.126.87.87 0 0 1-.32-.387 1.55 1.55 0 0 1-.117-.641v-.522c0-.258.039-.471.117-.641a.87.87 0 0 1 .32-.387.868.868 0 0 1 .47-.129c.177 0 .333.043.47.129a.862.862 0 0 1 .322.387c.078.17.117.383.117.641Zm.803.519v-.513c0-.377-.069-.701-.205-.973a1.46 1.46 0 0 0-.59-.63c-.253-.146-.559-.22-.916-.22-.356 0-.662.074-.92.22a1.441 1.441 0 0 0-.589.628c-.137.271-.205.596-.205.975v.513c0 .375.068.699.205.973.137.271.333.48.589.626.258.145.564.217.92.217.357 0 .663-.072.917-.217.256-.146.452-.355.589-.626.136-.274.205-.598.205-.973Zm1.29-.935v2.675h-.746v-3.999h.662l1.752 2.66h.032v-2.66h.75v4h-.656l-1.761-2.676h-.032Z"/>
+                      </svg>
+                       Insert New Item
+                </a>
+      </script>
+
+    <script id="HbsTemplateForScreens" type="text/x-handlebars">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ScreenName</th>
+                    <th>ScreenNameForHtmlId</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each this.Screens}}
+                <tr>
+                    <td class="text-center">
+                        {{ForSNo @index}}
+                    </td>
+                    <td>
+                        {{this.ScreenName}}
+                    </td>
+                    <td>
+                        {{this.ScreenNameForHtmlId}}
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input name="ScreenName" type="text" class="form-control" placeholder="Enter Screen Name"
+                            autocomplete="off" autofocus>
+                    </td>
+                    <td>
+                        <button data-foldername="{{this.FolderName}}" data-filename="{{this.FileName}}"
+                        data-itemname="{{this.ItemName}}"
+                         class="btn btn-success" onclick="jVarLocalInsertFuncs.InsertScreenUsingSwal(event)">CreateNew</button>
+                    </td>
+                </tr>
+
+            </tfoot>
+        </table>
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        let jVarLocalHbsTemplateForFiles = document.getElementById("HbsTemplateForFiles").innerHTML;
+        let jVarLocalHbsTemplateForItems = document.getElementById("HbsTemplateForItems").innerHTML;
+        let jVarLocalHbsTemplateForScreens = document.getElementById("HbsTemplateForScreens").innerHTML;
+
+
+        Handlebars.registerHelper('ForSNo', function (item) {
+            return item + 1;
+        });
+
+        Handlebars.registerPartial("HbsTemplateForFiles", jVarLocalHbsTemplateForFiles);
+        Handlebars.registerPartial("HbsTemplateForItems", jVarLocalHbsTemplateForItems);
+        Handlebars.registerPartial("HbsTemplateForScreens", jVarLocalHbsTemplateForScreens);
+    </script>
+
+    <script>
+        let jVarGlobalPresentViewData;
+        let jVarGlobalHBSData = {};
+        let jVarCommonSubRoute = "API";
+
+        jVarGlobalClientObject.Login.ClientSideCookieFuncs.CheckToken();
+
+        let jVarHtmlLoginModalId = document.getElementById("LoginModalId");
+        jVarHtmlLoginModalId.addEventListener('shown.bs.modal', function (event) {
+            let jVarLocalSubmitButton = event.currentTarget.querySelector(".modal-body input[type='submit']");
+            jVarLocalSubmitButton.focus();
+        });
+        let jVarHtmlFolderModalId = document.getElementById("FoldersModal");
+        jVarHtmlFolderModalId.addEventListener('shown.bs.modal', function (event) {
+            let jVarLocalSubmitButton = event.currentTarget.querySelector(".modal-body input");
+            jVarLocalSubmitButton.focus();
+        });
+
+        let jVarLocalInsertFolder = () => {
+            let jVarLocalFolderName = document.getElementById("FolderNameId");
+
+            let LocalToName = jVarLocalFolderName.value;
+
+            let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+            let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+            let jVarLocalUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Folder/Insert/OnlyFolder/${LocalToName}`;
+            let jVarLocalResultFileredArray;
+
+            fetch(jVarLocalUrl).then((response) => {
+                if (!response.ok) {
+                    throw new Error(response.statusText);
+                }
+
+                return response.json();
+            }).then((FetchData) => {
+
+                jVarLocalResultFileredArray = FetchData.filter(element => {
+                    return element.KTF === false;
+                });
+
+                if (jVarLocalResultFileredArray.length === 0) {
+                    window.location = "";
+                } else {
+                    swal.fire("Folder already present");
+                }
+            }).catch((error) => { });
+        };
+
+        class CommonFuncsForFolders {
+            static CreateFolders = () => {
+                let jVarLocalRoute = window.location.pathname.split("/")[1];
+                let jVarLocalSubRoute = jVarCommonSubRoute;
+
+                //http://localhost:4148/JSONProject/API/Folders/Show/ForDashboard
+
+                fetch(`/${jVarLocalRoute}/${jVarLocalSubRoute}/Folders/Show/ForDashboard`)
+                    .then(response => {
+                        return response.json();
+                        //return this.Login.StatusCodeFuncs.Code403({ inResponse: response });
+                    })
+                    .then(dataFromApi => {
+                        if (dataFromApi !== null) {
+                            if (dataFromApi.length > 0) {
+
+                                dataFromApi[0].TabPageClass = " show active";
+                                dataFromApi[0].MenuClass = " active";
+
+                            };
+                            let jVarLocalRawTemplate = document.getElementById("HbsTemplateForFolders").innerHTML;
+                            document.getElementById("KCont1").innerHTML = Handlebars.compile(jVarLocalRawTemplate)(dataFromApi);
+                        };
+                    });
+            }
+        };
+
+        let jVarLocalInsertFolderUsingSwal = () => {
+            Swal.fire({
+                title: 'New folder name',
+                html: `<input type="text" id="FolderSelected" class="swal2-input" placeholder="Insert FileName "> `,
+                confirmButtonText: 'Insert',
+                focusConfirm: false,
+
+                preConfirm: () => {
+                    const FolderName = Swal.getPopup().querySelector('#FolderSelected').value
+
+                    return { FolderName: FolderName }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    let LocalToName = result.value.FolderName;
+                    let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+                    let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+                    let jVarLocalUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Folder/Insert/OnlyFolder/${LocalToName}`;
+
+                    fetch(jVarLocalUrl).then((response) => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText);
+                        }
+
+                        return response.json();
+                    }).then((FetchData) => {
+
+                        jVarLocalResultFileredArray = FetchData.filter(element => {
+                            return element.KTF === false;
+                        });
+
+                        if (jVarLocalResultFileredArray.length === 0) {
+                            window.location = "";
+                        } else {
+                            swal.fire("Folder already present");
+                        }
+                    }).catch((error) => { });
+                };
+            });
+        };
+
+        let jVarLocalInsertFileToFolder = (inEvent) => {
+            let jVarLocalCurrentTarget = inEvent.currentTarget;
+            let jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");
+
+            let jVarLocalFolderName = jVarLocalCurrentTarget.dataset.foldername;
+            let jVarLocalFileName = jVarLocalClosestTr.querySelector("[name=FileName]");
+
+            let LocalToName = `${jVarLocalFileName.value}.json`;
+            let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+            let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+            let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/File/Insert?inFolderName=${jVarLocalFolderName}&ToName=${LocalToName}`;
+        };
+
+        let jVarLocalInsertFileToFolderUsingSwal = (inEvent) => {
+            let jVarLocalCurrentTarget = inEvent.currentTarget;
+            let jVarLocalFolderName = jVarLocalCurrentTarget.dataset.foldername;
+
+            Swal.fire({
+                title: 'New File Name',
+                html: `<input type="text" id="FileName" class="swal2-input" placeholder="Insert FileName "> `,
+                confirmButtonText: 'Insert',
+                focusConfirm: false,
+
+                preConfirm: () => {
+                    const FileName = Swal.getPopup().querySelector('#FileName').value
+
+                    return { FileName: FileName }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    let jVarLocalFileName = result.value.FileName;
+
+                    let LocalToName = `${jVarLocalFileName}.json`;
+                    let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+                    let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+                    let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/File/Insert?inFolderName=${jVarLocalFolderName}&ToName=${LocalToName}`;
+
+                    fetch(jVarLocalFetchUrl).then((response) => {
+                        if (!response.ok) throw new Error(response.statusText);
+
+                        return response.json();
+                    }).then((FetchData) => {
+                        if (FetchData.KTF) {
+                            window.location = "";
+                        }
+                    }).catch((error) => { });
+                };
+            });
+        };
+
+        let jVarLocalInsertFuncs = {
+            InsertItemUsingSwal: (inEvent) => {
+                let jVarLocalCurrentTarget = inEvent.currentTarget;
+
+                Swal.fire({
+                    title: 'New ItemName',
+                    html: `<input type="text" id="ItemName" class="swal2-input" placeholder="Insert ItemName "> `,
+
+                    confirmButtonText: 'Insert',
+                    focusConfirm: false,
+
+                    preConfirm: () => {
+                        const ItemName = Swal.getPopup().querySelector('#ItemName').value
+
+                        return { ItemName: ItemName }
+                    }
+                }).then((result) => {
+                    let jVarLocalFolderName = jVarLocalCurrentTarget.dataset.foldername;
+                    let jVarLocalFileName = jVarLocalCurrentTarget.dataset.filename;
+
+                    let LocalToName = result.value.ItemName;
+                    let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+                    let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+                    let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Data/Items/Insert?inFolderName=${jVarLocalFolderName}&inJsonFileName=${jVarLocalFileName}&ToName=${LocalToName}`;
+
+                    fetch(jVarLocalFetchUrl).then((response) => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText);
+                        }
+
+                        return response.json();
+                    }).then((FetchData) => {
+                        if (FetchData.KTF) {
+                            //this.ModalPopUp.StartFunc({ inType: "CreateSuccessForItem" });
+                            window.location = "";
+                        }
+                    }).catch((error) => { });
+
+                });
+            },
+            InsertScreenUsingSwal: (inEvent) => {
+                let jVarLocalCurrentTarget = inEvent.currentTarget;
+                let jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");
+
+                let jVarLocalScreenName = jVarLocalClosestTr.querySelector("[name=ScreenName]");
+
+                let jVarLocalFolderName = jVarLocalCurrentTarget.dataset.foldername;
+                let jVarLocalFileName = jVarLocalCurrentTarget.dataset.filename;
+                let jVarLocalItemName = jVarLocalCurrentTarget.dataset.itemname;
+
+                let LocalScreenName = jVarLocalScreenName.value;
+
+                let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
+                let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
+                let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Screens/Insert?inFolderName=${jVarLocalFolderName}&inJsonFileName=${jVarLocalFileName}&inItemName=${jVarLocalItemName}&ToName=${LocalScreenName}`
+              
+                fetch(jVarLocalFetchUrl).then((response) => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+
+                    return response.json();
+                }).then((FetchData) => {
+                    if (FetchData.KTF) {
+                        window.location = "";
+                    }
+                }).catch((error) => { });
+            
+            }
+        };
+
+        CommonFuncsForFolders.CreateFolders();
+    </script>
+</body>
+
+</html>
