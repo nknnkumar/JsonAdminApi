@@ -1,7 +1,6 @@
 const express = require('express');
 var path = require('path');
 let cors = require("cors");
-const formidable = require('formidable');
 
 const app = express();
 var path = require('path');
